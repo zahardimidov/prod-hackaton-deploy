@@ -24,20 +24,20 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
     ports:
-      - "4545:4545"
+      - "4000:4000"
     depends_on:
       - prod-postgres
     restart: always
 
     working_dir: /backend
 
-  frontend:
-    build:
-      context: ./frontend
-    networks:
-      - dev
-    ports:
-      - "3000:3000"
+  #frontend:
+  #  build:
+  #    context: ./frontend
+  #  networks:
+  #    - dev
+  #  ports:
+  #    - "3000:3000"
 
   prod-postgres:
     image: "postgres:13.3-alpine"
