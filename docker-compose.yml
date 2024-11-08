@@ -29,7 +29,7 @@ services:
       - prod-postgres
     restart: always
 
-    working_dir: /backend
+    working_dir: /prod-hackaton-backend
 
   #frontend:
   #  build:
