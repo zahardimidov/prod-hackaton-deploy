@@ -51,6 +51,7 @@ services:
 
       POSTGRES_USER: prod
       POSTGRES_PASSWORD: prod
+      POSTGRES_PORT: 5433
     networks:
       - dev
       
