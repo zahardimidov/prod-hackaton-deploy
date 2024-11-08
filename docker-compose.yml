@@ -18,7 +18,7 @@ services:
 
   backend:
     build:
-      context: ./backend
+      context: ./prod-hackaton-backend
     networks:
       - dev
     environment:
